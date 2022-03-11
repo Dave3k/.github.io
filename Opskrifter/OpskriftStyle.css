@@ -1,0 +1,109 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.opskriftbillede {
+    position:relative;
+    width: 100%;
+    overflow: hidden;
+    order: 2;
+}
+
+h1 {
+    font-size: 50px;
+    color:rgb(78, 78, 78);
+}
+h2 {
+    font-size:40px;
+    color:rgb(78, 78, 78);
+}
+
+p, li {
+    color:rgb(78, 78, 78);
+    font-size:17px;
+}
+
+ul {
+    list-style-type: circle;
+    
+}
+footer {
+    background-color: darkslategrey;
+    position: relative;
+    bottom: 0;   
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+
+.footercontent p {
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+.column {
+    float:left;
+    width: 50%;
+    padding:10px;
+}
+
+.row:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+
+.navbar {
+    width: 100%;
+    position:fixed;
+    top:0;
+    background-color: white;
+    overflow: hidden;
+    border-bottom: solid 2px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color:darkslategrey;
+    font-size: 20px;
+    font-weight: bold; 
+    padding-right: 50px;
+    padding-left: 50px;
+    position: relative;
+    top:-8px;
+}
+
+.navbar a:hover {
+    font-size:20px;
+    text-decoration:underline;
+}
+.navbar img {
+    outline: solid 2px orange;
+}
+
+
+.checked {
+    color: orange;
+  }
+
+
+.ingredienser {
+    width: 50%;
+    border-style: solid;
+    border-radius: 20px;
+    border-color:whitesmoke;
+}
+.ingredienser li {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid;
+    border-width: 200%;
+    border-color: whitesmoke;
+    font-weight: bold;
+    position: relative;
+    left:-5%;
+}

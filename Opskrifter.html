@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"> 
+    <title>Opskrifter</title>
+    <link rel="icon" type="image/x-icon" href="Fish.jpg">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="DavidsSandwiches.html">Hjem</a>
+        <a href="Billeder.html">Billeder</a>
+        <a href="Test.html">Om</a>
+      </div>
+
+<h1>Opskrifter</h1>
+
+<div class="center">
+      <input type="text" id="mySearch" onkeyup="searchFunction()" placeholder="Søg efter en opskrift..." title="Opskrifter">
+      <br><br>
+
+<ul id="myMenu">
+<li><a href="Opskrifter/Opskrift_GuldFiskSandwich.html">Guldfiske sandwich <br> <img src="https://static01.nyt.com/images/2021/04/15/dining/sl-fried-fish-sandwich/merlin_186367122_3dd99025-7f64-4d30-8e23-fc710757a936-articleLarge.jpg" height="100px"></a></li>
+<li><a href="Opskrifter/Opskrift_havørredMedSovs.html">Havørred med sovs og kartofler <br> <img src="https://www.maduniverset.dk/img/opskrifter/9126-013.JPG" height="100px"></a></li>
+<li><a href="Opskrifter/Opskrift_Medister.html">Laksemedister <br> <img src="https://cdn.bloggersdelight.dk/wp-content/blogs.dir/4131/files/2013/12/DSC_0640.jpg" height="100px"></a></li>
+<li><a href="Opskrifter/Opskrift_opskrift.html">Rødspættekage<br> <img src="https://recipesdetails.com/thumb/ravishing-red-velvet-cake.jpg" height="100px"></a></li>
+</ul>
+
+</div>
+
+<script>
+  function searchFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  console.log(input);
+</script>
+
+
+
+</body>
+</html>
