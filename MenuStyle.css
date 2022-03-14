@@ -1,0 +1,69 @@
+body {
+background-color: rgb(19, 19, 19);
+color: white;
+align-content: center;
+
+}
+
+
+h1 {
+text-align: center;
+padding-top: 10%;
+font-size: 50px;
+font-weight: 1000;
+
+}
+a {
+    text-decoration: none;
+}
+img{
+    height: 200px;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color:transparent;
+    border-style:solid;
+}
+
+img:hover {
+    border-width: 4px;
+    border-style: solid;
+    border-color: white;
+}
+
+.navhead {
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    display: inline-block;
+}
+
+.navhead a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 10%;
+
+}
+.navhead li{
+    list-style-type:none;
+    padding: 0;
+    align-self: center;
+}
+
+.navparent {
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    animation-name: Opacitychange;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes Opacitychange {
+    from{opacity: 0%;transform: scale(1.2);}
+    to{opacity: 100%;transform: scale(1);}
+    
+}
