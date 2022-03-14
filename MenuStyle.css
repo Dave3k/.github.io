@@ -2,9 +2,7 @@ body {
 background-color: rgb(19, 19, 19);
 color: white;
 align-content: center;
-
 }
-
 
 h1 {
 text-align: center;
@@ -97,8 +95,8 @@ transition: .5s;
 }
 
 .navbar{
-    background-color: black;
-    padding: 10px;
+    background-image: linear-gradient(black, rgba(0,0,0,0));
+    padding: 20px;
     margin: auto;
     display: inline-block;
     position: fixed;
@@ -108,14 +106,26 @@ transition: .5s;
     overflow: hidden;
 }
 .navbar a{
-    padding: 10px;
+    transition: .5s;
+
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
+    margin-left: 30px;
 }
 
 .navbar a:hover {
-text-decoration: underline;
+    transition: .5s;
+color: rgb(165, 165, 165);
+}
+
+.navbar img {
+    position:fixed;
+    left:0;
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 10px;
+
 }
 
 @keyframes Opacitychange {
