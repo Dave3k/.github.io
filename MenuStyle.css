@@ -101,11 +101,17 @@ transition: .5s;
     padding: 10px;
     margin: auto;
     display: inline-block;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
 }
 .navbar a{
     padding: 10px;
     color: white;
     font-size: 20px;
+    position: relative;
 }
 
 .navbar a:hover {
