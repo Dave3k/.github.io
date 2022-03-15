@@ -145,3 +145,30 @@ color: rgb(165, 165, 165);
     overflow: hidden;
     padding: 30px;
 }
+
+@keyframes FadeIn{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+
+.imagerow {
+    animation-name: FadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5%;
+}
+
+.imagecollumn {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.imagecollumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+
+}
