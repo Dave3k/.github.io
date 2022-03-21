@@ -134,6 +134,31 @@ width: 20%;
 
 }
 
+.buttonwhite {
+    font-size: 20px;
+    font-weight: bolder;
+
+    border: 3px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    
+    display: block;
+    text-align: center;
+    width: 300px;
+
+    transition: .2s;
+}
+
+.buttonwhite:hover {
+    background-color: white;
+    color: darkslateblue;
+
+}
+
+
+
 .navbar{
     background-color: rgb(53, 47, 95);
     padding: 20px;
@@ -207,6 +232,10 @@ color: rgb(165, 165, 165);
     position: fixed;
     top: 0;
     right: 10px;
+    left: 0;
+    padding-right: 10px;
+    text-align: right;
+    background-color: rgb(53, 47, 95);
 
     transition: .5s;
 }
@@ -230,7 +259,7 @@ color: rgb(165, 165, 165);
     }
 
 footer {
-    background-color:rgb(53, 47, 95);
+    background-color:rgb(53, 53, 53);
     bottom: 0;
     left: 0;
     margin: auto;
@@ -300,4 +329,15 @@ footer h1 {
 @keyframes navbarreveal {
 from{opacity: 0%;}
 to{opacity: 100%;}
+}
+
+.contact {
+    background-color: rgb(53, 47, 95);
+}
+
+.contact input {
+    border: none;
+    margin:10px;
+    padding: 20px 50% 20px 10px;
+    font-size: 15px;
 }
