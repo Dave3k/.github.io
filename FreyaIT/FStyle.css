@@ -174,11 +174,60 @@ width: 20%;
 }
 
 
+.navreveal {
+    display: none;
+}
+
+#navclose {
+    display: none;
+}
 
 .navbar a:hover {
     transition: .2s;
 color: rgb(165, 165, 165);
 }
+
+
+@media (max-width: 800px) {
+
+    .navbar a{
+        display:list-item;
+        list-style: none;
+        font-size: 25px;
+    }
+
+#navid {
+    display: none;
+
+    transition: .5s;
+}
+
+.navreveal {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 10px;
+
+    transition: .5s;
+}
+
+#navclose {
+    display: block;
+    position: static;
+    top: 10px;
+    left: 10px;
+    transition: .5s;
+}
+
+.navreveal img {
+    width: 50px;
+}
+
+#logo {
+    display: none;
+}
+
+    }
 
 footer {
     background-color:rgb(53, 47, 95);

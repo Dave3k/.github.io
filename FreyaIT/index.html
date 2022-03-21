@@ -14,16 +14,34 @@
 </head>
 <body>
   <br><br><br><br>
-  <div class="navbar">
-    <img src="FlogoTrans.png" alt="">
-    <a href="#none">Vores services</a>
-    <a href="#none">IT-sikkerhed</a>
-    <a href="#none">Om os</a>
-    <a href="#Support">Support</a>
-   
+
+  <div class="navrevealbutton">
+    <a class="navreveal" href="javascript:void(0);" onclick="MobileNav()"><img src="https://cdn-icons.flaticon.com/png/512/2976/premium/2976215.png?token=exp=1647889053~hmac=fd53380ff25699ddf05244a0dc11ac58"></a>
   </div>
 
-  <div class="row" >
+  <div class="navbar" id="navid">
+    <img src="FlogoTrans.png" alt="" id="logo">
+    <a href="javascript:void(0);" onclick="MobileNav()" id="navclose"><img src="Close.png" alt=""></a>
+    <a href="#services">Vores services</a>
+    <a href="#sikkerhed">IT-sikkerhed</a>
+    <a href="#Support">Support</a>
+    <a href="#om">Om os</a>
+    <a href="#Kontakt">Kontakt</a>
+
+  </div>
+
+  <script>
+    function MobileNav() {
+  var x = document.getElementById("navid");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+  </script>
+
+  <div class="row" style="background-color: whitesmoke;">
     <div class="column" style="width: 50%;">
       <img src="https://pbs.twimg.com/media/FOOvECMXoAA6bsw.jpg" alt="">
     </div>
