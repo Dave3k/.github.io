@@ -77,9 +77,10 @@ width: 20%;
     text-decoration: none;
     display: block;
     
-    transition: .2s;
+    transition: .1s;
 }
 .textbutton:hover {
+    display: block;
     text-decoration: none;
     border: 2px solid darkslateblue;
     box-shadow: 5px 5px rgba(71, 61, 139, 0.733);
@@ -147,6 +148,19 @@ width: 20%;
     text-align: right;
     animation: navbarreveal .5s ease-in-out;
 }
+.navbar img {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    left: 0;
+    top:15px;
+    margin:auto;
+    margin-left: 15px;
+    height: 40px;
+    vertical-align: middle;
+    padding: 0;
+    position: fixed;
+}
 .navbar a{
     transition: .5s;
     text-decoration: none;
@@ -159,8 +173,10 @@ width: 20%;
     display: inline-block;
 }
 
+
+
 .navbar a:hover {
-    transition: .5s;
+    transition: .2s;
 color: rgb(165, 165, 165);
 }
 
