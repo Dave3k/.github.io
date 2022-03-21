@@ -352,7 +352,9 @@ to{opacity: 100%;}
 
     border: none;
     margin:10px;
-    padding: 20px 50% 20px 10px;
+   width: 100%;
+   padding-top: 20px;
+   padding-bottom: 20px;
     font-size: 15px;
 }
 
@@ -362,7 +364,9 @@ to{opacity: 100%;}
     
         border: none;
         margin:10px;
-        padding: 20px 30% 20px 10px;
+        width: 90%;
+        padding-top:20px;
+        padding-bottom: 20px;
         font-size: 15px;
     }
 }
