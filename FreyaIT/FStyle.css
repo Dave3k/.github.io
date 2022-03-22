@@ -1,8 +1,13 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+
 }
 
 h1 {
@@ -10,6 +15,14 @@ h1 {
     font-weight: bolder;
     color: rgb(34, 34, 34);
     /* text-align: center; */
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 500;
+    color: darkslateblue;
+
+    margin: 10% 0 0 0;
 }
 
 p {
@@ -36,6 +49,9 @@ a:hover {
     transition: .5s;
 } */
 
+img {
+    max-width: 100%;
+}
 
 
 ul {
@@ -93,7 +109,7 @@ width: 20%;
     border: 2px solid darkslateblue;
     box-shadow: 5px 5px rgba(71, 61, 139, 0.733);
     transform: translateY(-20px);
-    padding: 5px;
+    margin: auto;
     
     transition: .2s;
 }
@@ -174,13 +190,14 @@ width: 20%;
     margin: auto;
     padding-right: 10%;
     display: inline-block;
-    position: fixed;
+    position:fixed;
     top: 0px;
     left: 0;
     right: 0;
     overflow: hidden;
     text-align: right;
     animation: navbarreveal .5s ease-in-out;
+    z-index: 10;
 }
 .navbar img {
     position: relative;
@@ -245,7 +262,7 @@ color: rgb(165, 165, 165);
     padding-right: 10px;
     text-align: right;
     background-color: rgb(53, 47, 95);
-
+    z-index: 10;
     transition: .5s;
 }
 
@@ -318,7 +335,6 @@ footer h1 {
     padding: 0;
     right: 0;
     width: 100%;
-
     } 
 
     .row{
@@ -332,16 +348,72 @@ footer h1 {
 
 }
 
+.article {
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+    padding: 10px 5px 20px 5px;
+    width: 100%;
+    height:auto;
+    height: 350px;
+
+    transition: .5s;
+
+}
+
+.article:hover{
+    transform: translateY(-20px);
+}
+
+
 .article h1{
-    font-size: 30px;
+    font-size: 22px;
     color: rgb(28, 23, 54);
     font-weight: 500;
     text-align: left;
+    margin-bottom: 50px;
+
+}
+
+.article h2 {
+    font-size: 20px;
+    color: rgb(28, 23, 54);
+    font-weight: 400;
+    text-align: left;
+    font-style: italic;
+
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.article a {
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+.article {
+    width: 300px;
+}
+
+.article h2 {
+    position: relative;
+}
+
 }
 
 .article img {
+    width: 100%;
     height: 200px;
+    /* height: 200px;
+    width: 300px; */
+    overflow: hidden;
+    object-fit: cover;
+    margin: auto;
+
 }
+
 
 @keyframes navbarreveal {
 from{opacity: 0%;}
@@ -397,15 +469,3 @@ to{opacity: 100%;}
     }
 }
 
-
-.reveal1 {
-    position: relative;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: 1s all ease;
-}
-
-.reveal1.active{
-    transform: translateY(0vh);
-    opacity: 1;
-}

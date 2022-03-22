@@ -5,11 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freya IT</title>
-  <link rel="stylesheet" href="FStyle.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="FStyle.css" !important>
   <link rel="icon" type="image/x-icon" href="Flogo.jpg">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
     </style>
+
 
 </head>
 <body>
@@ -55,11 +57,11 @@
   </div>
 <br><br>
   
-<div class="row" style="text-align: center; padding-bottom: auto; margin-bottom: auto;">
+<div class="row" style="text-align: center; padding-bottom: auto; margin-bottom: auto;" data-aos="fade-up">
   <div class="column" style="width: 30%; height: 300px; margin-left: 1%; margin-right: 1%;">
     <a href="#none" class="textbutton">
      <h1>Rådgivning</h1>
-     <p>Med os som samarbejdspartner får du den bedste mulige service 
+     <p>Med os som samarbejdspartner får du den bedst mulige service 
        og du kan sikkert overlade dine opgaver til os.
      </p>
     </a>
@@ -81,7 +83,7 @@
   </div>
 </div>
 
-  <div class="row" style="text-align: right;">
+  <div class="row" data-aos="fade-right" style="text-align: right;">
     <div class="column" style="max-width: 35%; text-align: left; margin-right: 8%;">
       <h1>Klar til at hjælpe</h1>
       <p>Vi hjælper dig med løsninger, der skal gøre din hverdag nemmere. 
@@ -94,26 +96,42 @@
     </div>
   </div>
 
-<!-- <div class="article">
 <div class="row" style="text-align: center;">
-  <h1 style="text-align: center;">Det siger vores kunder</h1>
-  <div class="column" style="width:25%; margin: 3%;">
-  <img src="https://d39eazhratf38c.cloudfront.net/Pictures/1024x536/0/8/1/60081_155787_29801.jpg" alt="">
-    <h1>David: "Jeg føler jeg var i trygge hænder" </h1>
+  <h2 style="text-align: center;" data-aos="fade">Det siger vores kunder</h2>
+
+  <div class="column" style="width:25%; margin: 3%;"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="0">
+    <div class="article">
+      <a href="#reviews">
+    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/a8/c4/fb.jpg" alt="">
+    <h1>"Jeg følte mig i trygge hænder"</h1>
+    <h2>-David</h2>
+  </a>
+  </div>
 </div>
-<div class="column" style="width:25%;margin: 3%;">
-  <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_473909426_129584.jpg" alt="">
-    <h1>Den amerikanske præsident: "Aldrig har jeg oplevet bedre service"</h1>
+
+<div class="column" style="width:25%;margin: 3%;"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="500">
+  <div class="article">
+    <a href="#reviews">
+  <img src="https://jyllands-posten.dk/pictures/image/12129892/y22me8/ALTERNATES/f_b-5_3/topshot-us-politics-trump" alt="">
+    <h1>"Aldrig har jeg oplevet bedre service. Bedre service har jeg aldrig oplevet"</h1>
+    <h2>-Donald Trump</h2>
+  </a>
 </div>
-<div class="column" style="width:25%;margin: 3%;">
-  <img src="https://website2021-live-e3e78fbbd3cc41f2847799-7c49c59.divio-media.com/filer_public/4b/04/4b0485e8-a7df-4f38-b723-ba05a41ab524/how_to_run_an_effective_business_meeting_-_a_step-by-step_guide.jpg" alt="">
-    <h1>"Bedste service nogensinde"</h1>
+</div>
+
+<div class="column" style="width:25%;margin: 3%;"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="1000">
+  <div class="article">
+    <a href="#reviews">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Cima_da_Conegliano%2C_God_the_Father.jpg/640px-Cima_da_Conegliano%2C_God_the_Father.jpg" alt="">
+    <h1>"Jeg velsigner denne virksomhed for deres hjælpsomhed."</h1>
+    <h2>-Gud</h2>
+  </a>
 </div>
 </div>
-</div> -->
+</div>
 
 <div>
-<div class="contact reveal1">
+<div class="contact" data-aos="fade">
 <div class="row" style="text-align: center; padding: 25px 0 50px 0;">
   <h1 style="color: white; font-size: 35px; font-weight: 400;">Tror du vi kan hjælpe dig?</h1>
   <div class="column" style="width: 30%; margin-right: 10%;">
@@ -157,26 +175,14 @@
 
 </footer>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  function reveal() {
-  var reveals = document.querySelectorAll(".reveal1");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
-
-
-window.addEventListener("scroll", reveal);
+  AOS.init({
+      offset: 0,
+      duration: 1500,
+  });
 </script>
+
 
 </body>
 </html>
