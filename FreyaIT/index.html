@@ -27,10 +27,9 @@
     <a href="#Support">Support</a>
     <a href="#om">Om os</a>
     <a href="#Kontakt">Kontakt</a>
-
   </div>
 
-  <script>
+<script>
     function MobileNav() {
   var x = document.getElementById("navid");
   if (x.style.display === "block") {
@@ -39,11 +38,11 @@
     x.style.display = "block";
   }
 }
-  </script>
+</script>
 
   <div class="row" style="background-color: whitesmoke;">
     <div class="column" style="width: 50%;">
-      <img src="https://pbs.twimg.com/media/FOOvECMXoAA6bsw.jpg" alt="">
+      <img src="https://website2021-live-e3e78fbbd3cc41f2847799-7c49c59.divio-media.com/filer_public_thumbnails/filer_public/4b/04/4b0485e8-a7df-4f38-b723-ba05a41ab524/how_to_run_an_effective_business_meeting_-_a_step-by-step_guide.jpg__1200x630_q90_crop_subject_location-420%2C304_subsampling-2_upscale.jpg" alt="">
     </div>
     <div class="column" style="max-width: 35%; margin-left: 8%;">
       <h1>Freya IT</h1>
@@ -51,13 +50,13 @@
         Med 15 års erfaring på markedet for hosting, 
         outsourcing og IT-sikkerhed leverer vi nogle af de 
         mest driftssikre løsninger.</p>
-       <a href="#contact" class="button">Kontakt os</a>
+       <a href="#contact" class="button" style="margin-bottom: 10px;">Kontakt os</a>
     </div>
   </div>
 <br><br>
   
 <div class="row" style="text-align: center; padding-bottom: auto; margin-bottom: auto;">
-  <div class="column" style="width: 33%; height: 300px;">
+  <div class="column" style="width: 30%; height: 300px; margin-left: 1%; margin-right: 1%;">
     <a href="#none" class="textbutton">
      <h1>Rådgivning</h1>
      <p>Med os som samarbejdspartner får du den bedste mulige service 
@@ -65,19 +64,19 @@
      </p>
     </a>
   </div>
-  <div class="column" style="width: 33%; height: 300px;">
+  <div class="column" style="width: 30%; height: 300px; margin-left: 1%; margin-right: 1%;">
     <a href="#none" class="textbutton">
      <h1>IT-services</h1>
-     <p>Om du er privat, selvstændig eller 1 af 1000 - så har vi flere skalerbare løsninger
-       til netop dit problem.
+     <p>Om du er privat, selvstændig eller 1 af 1000 - så har vi flere skalérbare løsninger
+       til lige netop dit problem.
      </p>
     </a>
   </div>
-  <div class="column" style="width: 33%; height: 300px;">
+  <div class="column" style="width: 30%; height: 300px; margin-left: 1%; margin-right: 1%;">
     <a href="#none" class="textbutton">
      <h1>Firmaløsninger</h1>
-     <p>Hos Freya IT tilpasser vi os vores kunder, og samarbejder med firmaer store
-       som små. </p>
+     <p>Hos Freya IT tilpasser vi os vores kunder, og samarbejder med alle firmaer store
+       som små. Vi tilpasser os til dig</p>
     </a>
   </div>
 </div>
@@ -113,7 +112,8 @@
 </div>
 </div> -->
 
-<div class="contact">
+<div>
+<div class="contact reveal1">
 <div class="row" style="text-align: center; padding: 25px 0 50px 0;">
   <h1 style="color: white; font-size: 35px; font-weight: 400;">Tror du vi kan hjælpe dig?</h1>
   <div class="column" style="width: 30%; margin-right: 10%;">
@@ -126,6 +126,7 @@
       </div>
       <a href="" style="width: 200px; display: block; margin: auto; margin-top: 20px;" class="buttonwhite">Ja tak, kontakt mig</a>
   </div>
+</div>
 </div>
 
 
@@ -155,6 +156,27 @@
 </div>
 
 </footer>
+
+<script>
+  function reveal() {
+  var reveals = document.querySelectorAll(".reveal1");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+
+window.addEventListener("scroll", reveal);
+</script>
 
 </body>
 </html>
