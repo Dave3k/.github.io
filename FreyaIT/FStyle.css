@@ -152,6 +152,14 @@ width: 20%;
 
     transition: .2s;
 }
+@media (max-width: 800px) {
+    .button{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+}
+
 
 .button:hover {
     background-color: darkslateblue;
@@ -394,7 +402,8 @@ footer h1 {
 
 @media (max-width: 800px) {
 .article {
-    width: 300px;
+    width: 90%;
+    height: auto;
 }
 
 .article h2 {
