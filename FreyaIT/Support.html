@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freya IT</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="FStyle.css" !important>
+  <link rel="icon" type="image/x-icon" href="Flogo.jpg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+    </style>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+
+</head>
+<body>
+
+  <br><br><br>
+
+  <div class="navreveal">
+    <a href="index.html" class="navreveal" style="position: absolute; left: 0;"><img src="FlogoTrans.png" alt=""></a>
+    <a class="navreveal" style="width: 50px;" href="javascript:void(0);" onclick="MobileNav()"><img src="menu.png"></a>
+  </div>
+
+  <div class="navbar" id="navid">
+    <a href="index.html"><img src="FlogoTrans.png" alt="" id="logo"></a>
+    <a href="javascript:void(0);" onclick="MobileNav()" id="navclose"><img src="Close.png" alt=""></a>
+    <a href="Services.html">Vores services</a>
+    <a href="Advice.html">Rådgivning</a>
+    <a href="Support.html">Support</a>
+    <a href="Om.html">Om os</a>
+    <a href="Kontakt.html">Kontakt</a>
+  </div>
+
+<script>
+    function MobileNav() {
+  var x = document.getElementById("navid");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<div class="header" style="height: 300px; text-align: center; background-image: url(https://images.unsplash.com/photo-1524749292158-7540c2494485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">
+    <h1 style="padding: 0; margin: 0;">Freya IT</h1>
+  </div>
+
+<div class="row" style="text-align: center;">
+    <h1 style="text-align: center;" data-aos="fade">Support</h1>
+  
+    <div class="column" style="width:25%; margin: 3%;"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="0">
+      <div class="article" style="text-align: center; align-content: center;">
+        <a href="Kontakt.html">
+      <img src="https://images.unsplash.com/photo-1587560699334-bea93391dcef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"  alt="">
+      <h1>Ring til os</h1>
+      <p>+45 26 36 99 63</p>
+    </a>
+    </div>
+  
+  </div>
+  
+  <div class="column" style="width:25%;margin: 3%;"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="500">
+    <div class="article">
+      <a href="fjernsupoort.html">
+    <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" alt="">
+      <h1>Fjernsupport</h1>
+      <p>Vi er klar til at løse dine problemer</p>
+    </a>
+  </div>
+  </div>
+  
+  <div class="column" style="width:25%;margin: 3%;"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="1000">
+    <div class="article">
+      <a href="Kontakt.html">
+    <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+      <h1>Skriv til os</h1>
+      <p>erik@freyait.dk</p>
+    </a>
+  </div>
+  </div>
+  </div>
+
+
+<footer>
+
+    <div class="row" style="text-align: center;">
+    <div class="column" style="margin-right: 25%;">
+    <h1 style="text-align: left;">Freya IT</h1>
+    <ul>
+      <li><a href="tel:26369963">Telefon: +45 26 36 99 63</a></li>
+      <li><a href="mailto:erik@freyait.dk">Mail: Erik@freyait.dk</a></li>
+      <li><a target="_blank"href="https://www.google.com/maps/place/Lillisvej+3,+9000+Aalborg/@57.0445047,9.8850268,17z/data=!3m1!4b1!4m5!3m4!1s0x464932437f0734cf:0x39011d2ff4b4525f!8m2!3d57.0445018!4d9.8872155">Lillisvej 3, 9000 Aalborg</a></li>
+      <li>CVR: 30435338</li>
+    </ul>
+  </div>
+  
+  <div class="column">
+    <h1 style="text-align: left;">Genveje</h1>
+    <ul>
+      <li><a href="fjernsupoort.html">Fjernsupport</a></li>
+      <li><a href="Kontakt.html">Kontakt os</a></li>
+      <li><a href="Support.html">Support</a></li>
+      <li><a href="Services.html">Services</a></li>
+    </ul>
+  </div>
+  </div>
+
+
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 0,
+        duration: 1500,
+    });
+  </script>
+  
+  
+  </body>
+  </html>
+  

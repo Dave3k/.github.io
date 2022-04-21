@@ -26,6 +26,12 @@ h2 {
     margin: 10% 0 0 0;
 }
 
+h3 {
+    font-size: 22px;
+    font-weight: 200;
+    color: gray;
+}
+
 p {
     color:darkslategray;
     font-size: 25px;
@@ -129,9 +135,10 @@ width: 20%;
     display: block;
     margin: auto;
     padding: 10px;
+    border-radius: 10px;
     box-shadow: 
-    0 1px 1px rgba(0,0,0,0.2), 
-    0 2px 2px rgba(0,0,0,0.2); 
+    0 2px 4px rgba(0,0,0,0.2), 
+    0 4px 8px rgba(0,0,0,0.2); 
 
 
     
@@ -514,3 +521,8 @@ to{opacity: 100%;}
     }
 }
 
+#bigheader h1 {
+    font-size: 70px;
+    font-weight: 500;
+    color: rgb(54, 54, 54);
+}
