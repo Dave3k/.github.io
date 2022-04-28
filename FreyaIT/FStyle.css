@@ -526,3 +526,25 @@ to{opacity: 100%;}
     font-weight: 500;
     color: rgb(54, 54, 54);
 }
+
+
+iframe {
+    width: 100vw;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.iframerow {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: fit-content;
+
+}
